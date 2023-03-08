@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
             return ListView.builder(
                 itemCount: articles!.length,
                 itemBuilder: ((context, index) =>
-                    customListTile(articles[index])));
+                    customListTile(articles[index],context)));
           }
           return Center(
             child: CircularProgressIndicator(),
